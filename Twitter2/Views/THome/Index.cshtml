@@ -1,0 +1,103 @@
+﻿@model Twitter2.ViewModels.THomeViewModel;
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <section class="my-3" style="width:40%; float:left">
+        <aside class="card">
+            <div class="card-body">
+
+                <div class="my-2">
+                    <div class="card-title text-center">
+                        @if (Model.FotoUsuario.Length == 0)
+                        {
+                            <img src="~/imgs/twitter.png" class="img-thumbnail m-1" style="max-width: 19%; float:left" />
+                        }
+                        else
+                        {
+                            <img src="~/imgs/users/@Model.FotoUsuario" class="img-thumbnail m-1" style="max-width: 19%; float:left" />
+                        }
+                        
+                        <h3>@Model.Usuario - Bienvenido</h3>
+                    </div> <br />
+                    <div class="card-body" style="margin-top: 30px">
+                        <h4>Amigos:</h4>
+                        @foreach (var friends in Model.Amigos)
+                        {
+                            <div class="card">
+                                <div class="card-body custom-control-inline">
+                                    <div>
+                                        <h5>@friends.Amigo</h5>
+                                    </div>
+                                    <div class="mx-2">
+                                        <a asp-action="EliminarAmigo" asp-route-userid="@friends.Usuario" asp-route-amigo="@friends.Amigo" class="btn btn-outline-danger">Eliminar Amigo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        }
+
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </aside>
+    </section>
+
+    <section class="my-0" style="width:58%; float:right">
+        
+
+        <div class="container-fluid my-3">
+            <form asp-action="addPublicacion" method="post" enctype="multipart/form-data" class="card border-primary">
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Escribe lo que quieras!" asp-for="TextoPublicacion" required rows="4"></textarea>
+                        <span asp-validation-for="TextoPublicacion" class="text-danger"></span>
+                    </div>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" asp-for="FotoPublicacion" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                            <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card-footer text-right">
+                    <button type="submit" class="btn btn-primary">Crear</button>
+                </div>
+
+            </form>
+            
+
+            @foreach (var publicaciones in Model.Publicaciones)
+            {
+                <div class="card my-2">
+                    <div class="card-body">
+                        <h4>@publicaciones.UserId <small class="text-muted">@publicaciones.HoraPublicacion</small></h4>
+                        <hr />
+                        @if (@publicaciones.Foto ==null)
+                        {
+                            <img hidden src="~/imgs/publ/@publicaciones.Foto" class="img-thumbnail my-1" />
+                        }
+                        else
+                        {
+                            <img src="~/imgs/publ/@publicaciones.Foto" class="img-thumbnail my-1" />
+
+                        }
+
+                        <h5>@publicaciones.Texto</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-action="Index" asp-controller="Publicacion" class="btn btn-outline-info" asp-route-id="@publicaciones.Id">Comentarios</a>|
+                        <a asp-action="DeletePubl"  class="btn btn-outline-danger" asp-route-name="@publicaciones.Foto" asp-route-id="@publicaciones.Id">Eliminar</a>|
+                        <a asp-action="EditarPubl"  class="btn btn-outline-warning" asp-route-id="@publicaciones.Id">Editar</a>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+    </section>

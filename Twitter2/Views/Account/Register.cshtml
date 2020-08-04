@@ -1,0 +1,84 @@
+﻿@model Twitter2.ViewModels.RegisterViewModel;
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+
+<link href="~/css/Login.css" rel="stylesheet" />
+<form asp-action="Register" method="post" enctype="multipart/form-data" class="form-signin mb-5" style="max-width:45rem ">
+    <div class="card shadow-sm">
+        
+        
+        <div class="card-body">
+            <div class="text-left">
+                <a asp-action="Login" class="btn btn-primary text-left">Volver a Login</a>
+            </div>
+            <h1>Crear Usuario</h1>
+
+            <div class="form-row my-2" hidden>
+                <div class="col">
+
+                    <input asp-for="Estado" placeholder="" value="Activo" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-row my-2">
+                <div class="col">
+                    <input asp-for="Nombre" class="form-control" placeholder="Nombre">
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <input asp-for="Apellido" class="form-control" placeholder="Apellido">
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row my-2">
+
+                <div class="col">
+                    <input asp-for="Correo" class="form-control" placeholder="Correo" />
+                    <span asp-validation-for="Correo" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <input asp-for="Telefono" class="form-control" placeholder="Telefono" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row my-2">
+                <div class="col">
+                    <input asp-for="UserName" class="form-control" placeholder="Nombre de Usuario" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row my-2">
+                <div class="col">
+                    <input asp-for="Password" class="form-control" placeholder="Contraseña" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirmar Contraseña" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" asp-for="Photo" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+            </div>
+
+
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-success">Registrarse</button>
+                <button type="reset" class="btn btn-warning">Limpiar</button>
+            </div>
+
+            <div asp-validation-summary="All" class="text-left text-danger"></div>
+        </div>
+
+    </div>
+</form>

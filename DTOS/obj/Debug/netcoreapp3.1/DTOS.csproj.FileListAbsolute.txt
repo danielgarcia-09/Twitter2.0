@@ -1,0 +1,12 @@
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\bin\Debug\netcoreapp3.1\DTOS.deps.json
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\bin\Debug\netcoreapp3.1\DTOS.dll
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\bin\Debug\netcoreapp3.1\DTOS.pdb
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\obj\Debug\netcoreapp3.1\DTOS.csprojAssemblyReference.cache
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\obj\Debug\netcoreapp3.1\DTOS.csproj.CoreCompileInputs.cache
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\obj\Debug\netcoreapp3.1\DTOS.AssemblyInfoInputs.cache
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\obj\Debug\netcoreapp3.1\DTOS.AssemblyInfo.cs
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\obj\Debug\netcoreapp3.1\DTOS.dll
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\obj\Debug\netcoreapp3.1\DTOS.pdb
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\bin\Debug\netcoreapp3.1\Database.dll
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\bin\Debug\netcoreapp3.1\Database.pdb
+C:\Users\kanedaboi_\Desktop\ITLA\Prog 3\Twitter2\DTOS\obj\Debug\netcoreapp3.1\DTOS.csproj.CopyComplete

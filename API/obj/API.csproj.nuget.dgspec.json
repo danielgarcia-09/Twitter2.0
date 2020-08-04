@@ -1,0 +1,454 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\API\\API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\kanedaboi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kanedaboi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj"
+              },
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Twitter2\\Twitter2.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Twitter2\\Twitter2.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj",
+        "projectName": "Database",
+        "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj",
+        "packagesPath": "C:\\Users\\kanedaboi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kanedaboi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\DTOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\DTOS.csproj",
+        "projectName": "DTOS",
+        "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\DTOS.csproj",
+        "packagesPath": "C:\\Users\\kanedaboi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kanedaboi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\kanedaboi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kanedaboi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj"
+              },
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\DTOS.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\DTOS.csproj"
+              },
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Twitter2\\Twitter2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Twitter2\\Twitter2.csproj",
+        "projectName": "Twitter2",
+        "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Twitter2\\Twitter2.csproj",
+        "packagesPath": "C:\\Users\\kanedaboi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Twitter2\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kanedaboi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj"
+              },
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\DTOS.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\DTOS\\DTOS.csproj"
+              },
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\ViewModels.csproj",
+        "projectName": "ViewModels",
+        "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\ViewModels.csproj",
+        "packagesPath": "C:\\Users\\kanedaboi_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kanedaboi_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\kanedaboi_\\Desktop\\ITLA\\Prog 3\\Twitter2\\Database\\Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

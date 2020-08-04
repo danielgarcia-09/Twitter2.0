@@ -1,0 +1,109 @@
+﻿@model Twitter2.ViewModels.FullPublicacionViewModel
+@{
+    ViewData["Title"] = "Comentarios";
+}
+
+<div class="my-3">
+
+    <div class="">
+        <h1>@Model.Publicacion.UserId <small class="text-muted">@Model.Publicacion.HoraPublicacion</small> </h1>
+    </div>
+    <div class="card-body">
+        @if (@Model.Publicacion.Foto == null)
+        {
+            <img hidden src="~/imgs/publ/@Model.Publicacion.Foto" class="img-thumbnail my-1" />
+        }
+        else
+        {
+            <img src="~/imgs/publ/@Model.Publicacion.Foto" class="img-thumbnail my-1" />
+
+        }
+        <h3>@Model.Publicacion.Texto</h3>
+    </div>
+    <div class="card-footer">
+        <form asp-action="addComentario" asp-route-id="@Model.Publicacion.Id" method="post">
+            <div class="form-group">
+
+                <textarea asp-for="Comentario" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="form-group text-right">
+                <button class="btn btn-primary " type="submit">Comentar!</button>
+            </div>
+
+        </form>
+    </div>
+
+    <hr class="text-primary" />
+
+    <div>
+        @foreach (var comentarios in Model.Comentarios)
+        {
+            <div class="card border-primary my-2 mx-2">
+
+
+                <div class="card-body">
+                    @if (comentarios.Foto == null)
+                    {
+                        <img hidden src="~/imgs/users/@comentarios.Foto" class="img-thumbnail my-1"  />
+                    }
+                    else
+                    {
+                        <img src="~/imgs/users/@comentarios.Foto" class="img-thumbnail my-1 mx-2" style="max-width: 10%; float:left" />
+
+                    }
+                    <h3 class="ml-2">@comentarios.UserComm</h3>
+                    <hr />
+                    <h5 class="ml-3">@comentarios.Comentario</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="text-right">
+                        <a class="btn btn-primary" data-toggle="collapse" href="#@comentarios.UserComm@comentarios.Id" role="button" aria-expanded="false" aria-controls="@comentarios.UserComm@comentarios.Id">
+                            Reply
+                        </a>
+                    </p>
+                    <div class="collapse" id="@comentarios.UserComm@comentarios.Id">
+                        <div class="card card-body">
+                            <form asp-action="addReply" asp-route-publ="@Model.Publicacion.Id" asp-route-id="@comentarios.Id" method="post">
+                                <div class="form-group">
+                                    <label asp-for="Reply" class="col-form-label">Escribe tu reply!</label>
+                                    <textarea asp-for="Reply" class="form-control" rows="3" required></textarea>
+                                </div>
+                                <div class="form-group text-right">
+                                    <button class="btn btn-primary " type="submit">Responder!</button>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            @foreach (var item in Model.Replies)
+                            {
+
+                                if (item.IdComentario == comentarios.Id)
+                                {
+                                    <div class="card-body">
+                                        <h3 class="ml-2">@item.UserId <small class="text-muted">@item.HoraPublicacion</small></h3>
+                                        <hr />
+                                        <h5 class="ml-3">@item.Texto</h5>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="card-body" hidden>
+                                        <h3 class="ml-2">@item.UserId <small class="text-muted">@item.HoraPublicacion</small></h3>
+                                        <hr />
+                                        <h5 class="ml-3">@item.Texto</h5>
+                                    </div>
+                                }
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        }
+    </div>
+</div>
+
+
+

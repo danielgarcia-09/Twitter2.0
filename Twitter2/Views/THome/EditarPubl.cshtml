@@ -1,0 +1,19 @@
+﻿@model Twitter2.ViewModels.PublicacionViewModel
+@{
+    ViewData["Title"] = "EditarPubl";
+}
+
+    <div class="container text-left my-3">
+        <h3>Editar Publiacion - @Model.UserId </h3>
+        <h5 class="text-muted">Fecha de creación - @Model.HoraPublicacion</h5>
+
+        <form asp-action="Editar" asp-route-id="@Model.Id" method="post">
+            <div class="form-group">
+                <textarea asp-for="Texto" class="form-control" placeholder="Escribe lo que quieras!"></textarea>
+            </div>
+            <div class="form-group text-right">
+                <button class="btn btn-outline-success" type="submit">Publicar!</button>
+            </div>
+        </form>
+    </div>
+

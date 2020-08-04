@@ -1,0 +1,42 @@
+﻿@model Twitter2.ViewModels.THomeViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Usuario</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Usuarios)
+            {
+                @if (item.UserName == Model.Usuario)
+                {
+                    <tr hidden>
+                        <td>@item.Nombre</td>
+                        <td>@item.Apellido</td>
+                        <td>@item.UserName</td>
+                    </tr>
+
+                }
+                else
+                {
+                    <tr>
+                        <td>@item.Nombre</td>
+                        <td>@item.Apellido</td>
+                        <td>@item.UserName</td>
+                        <td><a class="btn btn-outline-info" asp-action="AgregarAmigo" asp-route-user="@item.UserName">Agregar como amigo!</a></td>
+                    </tr>
+                }
+
+            }
+        </tbody>
+    </table>
+
+
